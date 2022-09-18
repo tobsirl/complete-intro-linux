@@ -14,3 +14,10 @@ echo hello my name is $USER
 USER=paul echo hello my name is $USER # hello my name is brian
 echo hello my name is $USER # hello my name is ubuntu
 ```
+
+## Per Session
+```bash
+echo $GREETING # nothing
+GREETING=hello
+echo $GREETING # hello
+```
