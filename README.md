@@ -26,3 +26,19 @@ echo $GREETING # hello
 `/etc/environment` change for everyone, not recommended
 
 `/etc/profile` `/etc/bashrc` `/etc/zshrc` system-wide
+
+## .bashrc and .bash_profile
+`.bash_profile` is only run on login shells
+`.bashrc` is run on every nonlogin shell
+
+```bash
+# add to .bash_profile to ignore and always run .bashrc
+if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
+fi
+```
+
+```bash
+# reload file
+source ~/.bashrc
+```
