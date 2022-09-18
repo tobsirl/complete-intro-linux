@@ -21,3 +21,8 @@ echo $GREETING # nothing
 GREETING=hello
 echo $GREETING # hello
 ```
+
+## Permanent
+`/etc/environment` change for everyone, not recommended
+
+`/etc/profile` `/etc/bashrc` `/etc/zshrc` system-wide
