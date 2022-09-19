@@ -42,3 +42,8 @@ fi
 # reload file
 source ~/.bashrc
 ```
+
+## Processes
+```bash
+ps # list all running processes
+```
