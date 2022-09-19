@@ -46,4 +46,7 @@ source ~/.bashrc
 ## Processes
 ```bash
 ps # list all running processes
+
+sleep 10 & # & means run in the background
+ps
 ```
