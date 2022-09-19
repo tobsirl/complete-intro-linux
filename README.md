@@ -54,4 +54,8 @@ sleep 100 &
 ps # find the sleep pid
 kill -s SIGKILL <the pid from above>
 ps # notice the process has been killed
+
+ps aux # shows every process running
+
+ps aux | grep ps
 ```
