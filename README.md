@@ -49,4 +49,9 @@ ps # list all running processes
 
 sleep 10 & # & means run in the background
 ps
+
+sleep 100 &
+ps # find the sleep pid
+kill -s SIGKILL <the pid from above>
+ps # notice the process has been killed
 ```
