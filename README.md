@@ -16,6 +16,7 @@ echo hello my name is $USER # hello my name is ubuntu
 ```
 
 ## Per Session
+
 ```bash
 echo $GREETING # nothing
 GREETING=hello
@@ -23,11 +24,13 @@ echo $GREETING # hello
 ```
 
 ## Permanent
+
 `/etc/environment` change for everyone, not recommended
 
 `/etc/profile` `/etc/bashrc` `/etc/zshrc` system-wide
 
 ## .bashrc and .bash_profile
+
 `.bash_profile` is only run on login shells
 `.bashrc` is run on every nonlogin shell
 
@@ -44,6 +47,7 @@ source ~/.bashrc
 ```
 
 ## Processes
+
 ```bash
 ps # list all running processes
 
@@ -58,4 +62,15 @@ ps # notice the process has been killed
 ps aux # shows every process running
 
 ps aux | grep ps
+```
+
+## Foreground and Background
+
+```bash
+sleep 100
+# hit CTRL + Z
+jobs # notice process is stopped
+bg 1 # it's the first and only item in the list, the number refers to that
+jobs # notice process is running
+fg 1 # reattch to the process
 ```
