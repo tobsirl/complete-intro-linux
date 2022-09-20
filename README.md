@@ -85,3 +85,15 @@ echo $? # $? corresponds to the last exit code, in this case 0
 yes # hit CTRL+C to stop it
 echo $? # you stopped it so it exited with a non-zero code, 130
 ```
+
+### Common exit codes
+
+- 0: means it was successful. Anything other than 0 means it failed
+- 1: a good general catch-all "there was an error"
+- 2: a bash internal error, meaning you or the program tried to use bash in an incorrect way
+- 126: Either you don't have permission or the file isn't executable
+- 127: Command not found
+- 128: The exit command itself had a problem, usually that you provided a non-integer exit code to it
+- 130: You ended the program with CTRL+C
+- 137: You ended the program with SIGKILL
+- 255: Out-of-bounds, you tried to exit with a code larger than 255
