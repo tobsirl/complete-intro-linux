@@ -115,3 +115,11 @@ You can see it does all three commands right in a row. That's what the `&&` oper
 false || echo hi # you'll see hi
 false && echo hi # you won't see hi
 ```
+
+### Always Run
+
+To always run the second command
+
+```bash
+false ; true ; echo hey # you'll see hey
+```
