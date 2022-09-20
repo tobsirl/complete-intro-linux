@@ -74,3 +74,14 @@ bg 1 # it's the first and only item in the list, the number refers to that
 jobs # notice process is running
 fg 1 # reattch to the process
 ```
+
+## Exit Codes
+
+A program that successfully runs and exits by itself will have an exit code of 0.
+
+```bash
+date # show current date, runs successfully
+echo $? # $? corresponds to the last exit code, in this case 0
+yes # hit CTRL+C to stop it
+echo $? # you stopped it so it exited with a non-zero code, 130
+```
