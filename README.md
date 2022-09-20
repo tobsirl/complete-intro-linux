@@ -105,4 +105,13 @@ touch status.txt && date >> status.txt && uptime >> status.txt
 cat status.txt
 ```
 
-You can see it does all three commands right in a row. That's what the && operator does. It runs from left to right (touch, date, then uptime). The && operator will bail if any of those commands fails.
+You can see it does all three commands right in a row. That's what the `&&` operator does. It runs from left to right (touch, date, then uptime). The `&&` operator will bail if any of those commands fails.
+
+### Run if first one fails
+
+`||` if one fails
+
+```bash
+false || echo hi # you'll see hi
+false && echo hi # you won't see hi
+```
