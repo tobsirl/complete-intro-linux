@@ -97,3 +97,12 @@ echo $? # you stopped it so it exited with a non-zero code, 130
 - 130: You ended the program with CTRL+C
 - 137: You ended the program with SIGKILL
 - 255: Out-of-bounds, you tried to exit with a code larger than 255
+
+### Run if first one succeeds
+
+```bash
+touch status.txt && date >> status.txt && uptime >> status.txt
+cat status.txt
+```
+
+You can see it does all three commands right in a row. That's what the && operator does. It runs from left to right (touch, date, then uptime). The && operator will bail if any of those commands fails.
