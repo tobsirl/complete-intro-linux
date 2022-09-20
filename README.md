@@ -123,3 +123,17 @@ To always run the second command
 ```bash
 false ; true ; echo hey # you'll see hey
 ```
+
+### Subcommands
+
+Running commands within a command.
+
+```bash
+echo I think $(whoami) is a very cool user # I think ubuntu is very cool
+```
+
+`$()` allows you to run commands inside of another command. You can also use backticks ``
+
+```bash
+echo $(date +%x) – $(uptime) >> log.txt
+```
