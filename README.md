@@ -139,6 +139,7 @@ echo $(date +%x) – $(uptime) >> log.txt
 ```
 
 ## wget
+
 wget works like cp but instead of copying a local file you're copying something off the net.
 
 ```bash
