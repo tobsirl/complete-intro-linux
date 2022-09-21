@@ -137,3 +137,12 @@ echo I think $(whoami) is a very cool user # I think ubuntu is very cool
 ```bash
 echo $(date +%x) – $(uptime) >> log.txt
 ```
+
+## wget
+wget works like cp but instead of copying a local file you're copying something off the net.
+
+```bash
+wget https://raw.githubusercontent.com/btholt/bash2048/master/bash2048.sh
+chmod 700 bash2048.sh
+. bash2048.sh
+```
