@@ -191,3 +191,10 @@ curl -X LOL_THIS_ISNT_REAL http://localhost:8000
 ```bash
 curl -b "name=test" http://localhost:8000
 ```
+
+### Redirects
+
+```bash
+curl http://bit.ly/linux-cli # won't redirect by default
+curl -L http://bit.ly/linux-cli # -L tells curl to redirect
+```
