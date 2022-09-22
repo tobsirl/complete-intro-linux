@@ -163,3 +163,8 @@ curl can be used in a greater chain of commands.
 `curl <url> > output.txt`
 
 You can also use `-o <file name>` to redirect output to a file or just `-O` to redirect it to a file named by the same file name
+
+### HTTP Verbs
+
+`curl -I http://localhost:8000`
+This will send a HEAD request instead of a GET request. HEAD requests just get the endpoint metadata and don't actually do a full request.
