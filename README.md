@@ -198,3 +198,9 @@ curl -b "name=test" http://localhost:8000
 curl http://bit.ly/linux-cli # won't redirect by default
 curl -L http://bit.ly/linux-cli # -L tells curl to redirect
 ```
+
+### Headers
+
+```bash
+curl -H "'accept-language: en-US" -H "Authorization: Bearer 12345" http://localhost:8000 # multiple headers
+```
