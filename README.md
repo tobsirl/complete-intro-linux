@@ -153,4 +153,13 @@ chmod 700 bash2048.sh
 ```bash
 # run python server
 python3 -m http.server 8000 --bind 0.0.0.0 
+
+curl http://localhost:8000 # request to the server
 ```
+
+### Output
+
+curl can be used in a greater chain of commands.
+`curl <url> > output.txt`
+
+You can also use `-o <file name>` to redirect output to a file or just `-O` to redirect it to a file named by the same file name
