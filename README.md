@@ -168,3 +168,12 @@ You can also use `-o <file name>` to redirect output to a file or just `-O` to r
 
 `curl -I http://localhost:8000`
 This will send a HEAD request instead of a GET request. HEAD requests just get the endpoint metadata and don't actually do a full request.
+
+```bash
+curl -X POST http://localhost:8000
+curl -d "this is the body being sent with the HTTP request" http://localhost:8000
+# both of these requests will fail because our static
+# file server doesn't know what to do with POST requests
+```
+
+`-X` allows you to specify what verb you want to use.
