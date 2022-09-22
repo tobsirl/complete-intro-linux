@@ -147,3 +147,10 @@ wget https://raw.githubusercontent.com/btholt/bash2048/master/bash2048.sh
 chmod 700 bash2048.sh
 . bash2048.sh
 ```
+
+## curl
+
+```bash
+# run python server
+python3 -m http.server 8000 --bind 0.0.0.0 
+```
