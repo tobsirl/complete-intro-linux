@@ -177,3 +177,11 @@ curl -d "this is the body being sent with the HTTP request" http://localhost:800
 ```
 
 `-X` allows you to specify what verb you want to use.
+
+```bash
+curl -X PUT http://localhost:8000
+curl -X PATCH http://localhost:8000
+curl -X DELETE http://localhost:8000
+curl -X OPTIONS http://localhost:8000
+curl -X LOL_THIS_ISNT_REAL http://localhost:8000
+```
