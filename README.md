@@ -185,3 +185,9 @@ curl -X DELETE http://localhost:8000
 curl -X OPTIONS http://localhost:8000
 curl -X LOL_THIS_ISNT_REAL http://localhost:8000
 ```
+
+### Cookies
+
+```bash
+curl -b "name=test" http://localhost:8000
+```
