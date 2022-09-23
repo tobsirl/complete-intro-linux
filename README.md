@@ -226,3 +226,6 @@ You can then execute this file with `./`
 ```bash
 #! /bin/bash
 ```
+
+### PATH
+To run files from anywhere on your computer, you use a variable called `PATH`
