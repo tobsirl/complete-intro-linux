@@ -204,3 +204,15 @@ curl -L http://bit.ly/linux-cli # -L tells curl to redirect
 ```bash
 curl -H "'accept-language: en-US" -H "Authorization: Bearer 12345" http://localhost:8000 # multiple headers
 ```
+
+## Writing Your Own Scripts
+
+ Bash allows you to put many commands into one file to create a program of programs which is called a shell script.
+
+### Bashscript
+```bash
+mkdir -p ~/temp # -p mean don't error if it exists in this case, it does other things too
+cd ~/temp
+touch file{1..10}.txt
+echo done
+```
