@@ -219,3 +219,10 @@ echo done
 ```
 
 ### Hashbang
+
+To make the script executable you need to add `#!`, after hashbang you add the absolute path.
+You can then execute this file with `./`
+
+```bash
+#! /bin/bash
+```
