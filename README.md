@@ -246,3 +246,20 @@ cd $DESTINATION
 touch ${FILE_PREFIX}{1..10}.txt
 echo done
 ```
+
+### User Input
+Read user input using `read`
+
+```bash
+#! /bin/bash
+
+DESTINATION=~/temp
+read -p "enter a file prefix: " FILE_PREFIX
+
+mkdir -p $DESTINATION
+cd $DESTINATION
+touch ${FILE_PREFIX}{1..10}.txt
+echo done
+```
+
+The `-p` flag allows us to prompt the user with a string, letting them know what we're expecting
