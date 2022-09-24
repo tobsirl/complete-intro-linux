@@ -303,3 +303,12 @@ cd $DESTINATION
 touch ${FILE_PREFIX}{1..10}.txt
 echo done
 ```
+
+The `[]` are a special notation which actually translate to test commands. So our condition actually evaluates to `test -z $DESTINATION`.
+
+```bash
+test -z ""
+echo $? # 0, this is true
+test -z "lol"
+echo $? # 1, this is false
+```
