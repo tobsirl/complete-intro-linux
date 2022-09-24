@@ -324,3 +324,15 @@ test 15 -le 10 # 1 le means less than or equal to
 test -e ~/some-file.txt # tests to see if a file exists
 test -w ~/some-file.txt # tests to see if a file exists and you can write to it
 ```
+
+### else and elif
+
+```bash
+if [ $1 -gt 10 ]; then
+  echo "greater than 10"
+elif [ $1 -lt 10 ]; then
+  echo "less than 10"
+else
+  echo "equals 10"
+fi
+```
