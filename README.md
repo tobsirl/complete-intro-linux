@@ -312,3 +312,15 @@ echo $? # 0, this is true
 test -z "lol"
 echo $? # 1, this is false
 ```
+
+There's a ton operators you can do with test. Here are some examples:
+
+```bash
+test 15 -eq 15 # 0
+test brian = brian # 0
+test brian != brian # 1
+test 15 -gt 10 # 0 gt means greater than
+test 15 -le 10 # 1 le means less than or equal to
+test -e ~/some-file.txt # tests to see if a file exists
+test -w ~/some-file.txt # tests to see if a file exists and you can write to it
+```
