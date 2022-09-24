@@ -228,4 +228,21 @@ You can then execute this file with `./`
 ```
 
 ### PATH
+
 To run files from anywhere on your computer, you use a variable called `PATH`
+
+### Variables
+
+### Setting a Variable
+
+```bash
+#! /bin/bash
+
+DESTINATION=~/temp
+FILE_PREFIX=file
+
+mkdir -p $DESTINATION
+cd $DESTINATION
+touch ${FILE_PREFIX}{1..10}.txt
+echo done
+```
