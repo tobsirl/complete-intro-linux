@@ -248,6 +248,7 @@ echo done
 ```
 
 ### User Input
+
 Read user input using `read`
 
 ```bash
@@ -263,3 +264,21 @@ echo done
 ```
 
 The `-p` flag allows us to prompt the user with a string, letting them know what we're expecting
+
+### Arguments
+
+Passing arguments into our program
+
+```bash
+#! /bin/bash
+
+DESTINATION=$1
+read -p "enter a file prefix: " FILE_PREFIX
+
+mkdir -p $DESTINATION
+cd $DESTINATION
+touch ${FILE_PREFIX}{1..10}.txt
+echo done
+```
+
+`$1` represents the first argument
