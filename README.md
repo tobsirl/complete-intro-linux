@@ -371,9 +371,9 @@ Fundamentals of any programming language
 ```bash
 #!/bin/bash
 
-friends=(Kyle Marc Jem "Paul Tobin" Sarah)
+friends=(Kyle Marc Jem "Paul Tobin" Sarah) # define an array
 
-echo My second friend is ${friends[1]}
+echo My second friend is ${friends[1]} # access an element in the array
 
 for friend in ${friends[*]}
 do
