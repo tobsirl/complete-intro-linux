@@ -399,3 +399,16 @@ done
 
 echo "you got it!"
 ```
+
+## cron
+
+For repeatable tasks
+
+### cron folders
+
+Any script you put in any of the following will be run on a schedule:
+
+- /etc/cron.daily
+- /etc/cron.hourly
+- /etc/cron.monthly
+- /etc/cron.weekly
