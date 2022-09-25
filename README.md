@@ -361,3 +361,6 @@ case $1 in
     ;;
 esac
 ```
+
+## Loops and Arrays
+Fundamentals of any programming language
