@@ -375,10 +375,10 @@ friends=(Kyle Marc Jem "Paul Tobin" Sarah) # define an array
 
 echo My second friend is ${friends[1]} # access an element in the array
 
-for friend in ${friends[*]}
-do
+for friend in ${friends[*]} # access every element of the array
+do # start
     echo friend: $friend
-done
+done # ebd
 
-echo "I have ${#friends[*]} friends"
+echo "I have ${#friends[*]} friends" # show the length
 ```
