@@ -363,4 +363,22 @@ esac
 ```
 
 ## Loops and Arrays
+
 Fundamentals of any programming language
+
+### Arrays and For Loops
+
+```bash
+#!/bin/bash
+
+friends=(Kyle Marc Jem "Paul Tobin" Sarah)
+
+echo My second friend is ${friends[1]}
+
+for friend in ${friends[*]}
+do
+    echo friend: $friend
+done
+
+echo "I have ${#friends[*]} friends"
+```
